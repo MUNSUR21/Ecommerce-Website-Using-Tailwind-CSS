@@ -4,11 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Tailwind CSS/tailwind.css">
+
     <title>Document</title>
 </head>
 <body>
-    <h1 class="text-3xl font-bold underline">
-        Hello world!
-      </h1>
+     <!-- navber -->
+     <nav class="bg-white text-black w-full uppercase tracking-[.22px] md:text-[22px] py-11">
+        <div class="container mx-auto flex flex-row justify-between items-center">
+            <div class="">
+                <img src="images/logo-black.png" alt="Fashion Logo">
+            </div>
+            <ul class="hidden md:flex flex-row gap-16 justify-end items-center">
+                <li><a class="font-semibold text-slate-600" href="#">Catalague</a></li>
+                <li><a class="font-semibold text-slate-600" href="#">Fashion</a></li>
+                <li><a class="font-semibold text-slate-600" href="#">Favourite</a></li>
+                <li><a class="font-semibold text-slate-600" href="#">LifeStyle</a></li>
+                <li class="font-semibold" ><a class="bg-black text-white rounded-md p-4" href="#">Sign Up</a></li>
+            </ul>
+            <!-- Mobile Nav -->
+            <div class="md:hidden">
+                <div class="space-y-1 rotate-180" id="hamburger">
+                    <div class="w-6 h-0.5 bg-black"></div>
+                    <div class="w-6 h-0.5 bg-black"></div>
+                    <div class="w-6 h-0.5 bg-black"></div>
+                </div>
+                <ul class="flex flex-col justify-start gap-5 h-screen absolute top-0 left-0 bg-primary p-10 items-start -translate-x-full transition-all" id="mobile-nav">
+                    <li><a class="font-bold" href="#">Catalague</a></li>
+                    <li><a class="font-bold" href="#">Fashion</a></li>
+                    <li><a class="font-bold" href="#">Favourite</a></li>
+                    <li><a class="font-bold" href="#">LifeStyle</a></li>
+                    <li><a class="font-bold" href="#">Sign Up</a></li>
+                </ul>
+            </div>
+            <!-- Mobile Nav End -->
+        </div>
+       </nav>
+       <!-- Nab End -->
+       <!-- Hero Section -->
+       <section class="container mx-auto flex flex-col bg-[#F4F6F5] rounded-[59px] pt-16">
+        <div class="">
+            <h1 class="">
+                <span>LET'S</span> <br/> EXPLORE <br> <span class="">UNIQUE</span> <br> CLOTHES.
+            </h1>
+            <P class="">Live for Influential and Innovative fashion!</P>
+            <div class="">
+                <div class="">
+                    <img src="images/banner-image-2.png" alt="">
+                </div>
+                <a href="#" class="">Shop Now</a>
+            </div>
+        </div>
+        <div class="">
+            <img src="images/banner-image.png" alt="banner-image">
+        </div>
+       </section>
+       <!-- Hero Section End -->
+       <script>
+        const hamburger = document.getElementById('hamburger')
+        const mobileNav = document.getElementById('mobile-nav')
+
+        hamburger.addEventListener('click', () => {
+            mobileNav.classList.toggle('-translate-x-full')
+        })
+       </script>
 </body>
 </html>
