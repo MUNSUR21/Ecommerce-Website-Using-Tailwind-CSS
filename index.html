@@ -28,7 +28,7 @@
                     <div class="w-6 h-0.5 bg-black"></div>
                     <div class="w-6 h-0.5 bg-black"></div>
                 </div>
-                <ul class="flex flex-col justify-start gap-5 h-screen absolute top-0 left-0 bg-primary p-10 items-start -translate-x-full transition-all" id="mobile-nav">
+                <ul class="flex flex-col justify-start gap-5 h-screen absolute top-0 left-0 bg-primary p-10 items-start -translate-x-full transition-all z-20" id="mobile-nav">
                     <li><a class="font-bold" href="#">Catalague</a></li>
                     <li><a class="font-bold" href="#">Fashion</a></li>
                     <li><a class="font-bold" href="#">Favourite</a></li>
@@ -41,24 +41,56 @@
        </nav>
        <!-- Nab End -->
        <!-- Hero Section -->
-       <section class="container mx-auto flex flex-col bg-[#F4F6F5] rounded-[59px] pt-16">
-        <div class="">
-            <h1 class="">
-                <span>LET'S</span> <br/> EXPLORE <br> <span class="">UNIQUE</span> <br> CLOTHES.
+       <section class="container mx-auto flex flex-col bg-[#F4F6F5] rounded-[59px] pt-16 px-10 md:items-center md:px-20 md:pt-[68px] md:flex-row md:justify-between gap-10 z-30">
+        <div class="flex flex-col items-start text-black md:pb-[68px] z-10">
+            <h1 class="text-4xl font-black leading-[125%] sm:text-5xl md:text-[96px] md:leading-[125%]">
+                <span class="relative after:w-[120%] after:h-full after:bg-slate-200 after:block after:absolute after:-z-10 after:top-0 after:-rotate-2 after:-ml-1">LET'S</span> <br/> EXPLORE <br> <span class=" relative after:w-[125%] after:h-full after:bg-primary after:block after:absolute after:-z-10 after:top-0 after:-rotate-2 after:-ml-1">UNIQUE</span> <br> CLOTHES.
             </h1>
-            <P class="">Live for Influential and Innovative fashion!</P>
-            <div class="">
-                <div class="">
+            <P class="md:text-[32px]">Live for Influential and Innovative fashion!</P>
+            <div class="flex flex-col md:flex-row md:items-center justify-evenly gap-9 pt-8">
+                <div class="w-1/2 h-1/2">
                     <img src="images/banner-image-2.png" alt="">
                 </div>
-                <a href="#" class="">Shop Now</a>
+                <a href="#" class="bg-black text-white rounded-md px-4 text-center py-4">Shop Now</a>
             </div>
         </div>
         <div class="">
-            <img src="images/banner-image.png" alt="banner-image">
+            <img class="w-full" src="images/banner-image.png" alt="banner-image">
         </div>
        </section>
        <!-- Hero Section End -->
+       <!-- Brand Section -->
+       <section class="flex flex-col justify-center items-center gap-[121px] my-16 bg-primary py-[61px] md:flex-row">
+        <div class="w-[118px]"><img src="images/brands/hm.png" alt=""></div>
+        <div class="w-[150px]"><img src="images/brands/obey.png" alt=""></div>
+        <div class="w-[176px]"><img src="images/brands/shopify.png" alt=""></div>
+        <div class="w-[150px]"><img src="images/brands/lacoste.png" alt=""></div>
+        <div class="w-[127px]"><img src="images/brands/levis.png" alt=""></div>
+        <div class="w-[166px]"><img src="images/brands/amazon.png" alt=""></div>
+       </section>
+       <!-- Brand SEction End -->
+       <!-- New Arrival Section -->
+       <section class="flex flex-col container items-start gap-28 mx-auto px-[10]">
+        <div class="relative text-black ">
+            <h2 class="text-4xl font-bold after:content-oval after:absolute after:left-[50%] after:-bottom-2.2 after:-z-10">NEW ARRIVALS</h2>
+        </div>
+        <div class="">
+            <!-- cards -->
+            <div class="">
+                <img class="" src="images/hoddiee.png" alt="">
+                <div class="">
+                    <div class="">
+                        <h3 class="">Hoodies & Sweetshirt</h3>
+                        <a href="" class="#">Explore Now!</a>
+                    </div>
+                    <div class="">
+                        <img src="images/arrow.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+       </section>
+       <!-- New Arrival Section End -->
        <script>
         const hamburger = document.getElementById('hamburger')
         const mobileNav = document.getElementById('mobile-nav')
